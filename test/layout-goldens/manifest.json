@@ -1,0 +1,32 @@
+{
+  "fixture": "test/layout-fixtures/layout.ditamap",
+  "generatedDocx": "build/layout-harness/capture/out/layout.docx",
+  "baselineDocx": "test/layout-goldens/layout-baseline.docx",
+  "forkRevision": "cc23fdd8b3f2",
+  "ditaVersion": "4.4",
+  "ditaDownloadUrl": "https://github.com/dita-ot/dita-ot/releases/download/4.4/dita-ot-4.4.zip",
+  "ditaOverride": false,
+  "ditaOverrideSource": null,
+  "ditaDir": "build/layout-harness/capture/toolkit/dita-ot-4.4",
+  "javaVersion": "openjdk version \"21.0.9\" 2025-10-21 LTS\nOpenJDK Runtime Environment Temurin-21.0.9+10 (build 21.0.9+10-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.9+10 (build 21.0.9+10-LTS, mixed mode, sharing)",
+  "pluginZip": "build/layout-harness/packages/com.elovirta.ooxml-capture.zip",
+  "docxSha256": "21894157ce273d9dff059ba3ffd5e4867bcb0f11aac04e9846e755ee3e887aa3",
+  "parts": {
+    "[Content_Types].xml": {
+      "path": "test/layout-goldens/[Content_Types].xml",
+      "sha256": "28cc6374963085e0cd96f4c500c65f4dd5eb40be06dee64b53147e16696762ec"
+    },
+    "word/document.xml": {
+      "path": "test/layout-goldens/word/document.xml",
+      "sha256": "209894dfddfde7a446d28d4749a6f26af2937d68ff8fbd29ebef55f3cc0b80e4"
+    },
+    "word/numbering.xml": {
+      "path": "test/layout-goldens/word/numbering.xml",
+      "sha256": "3f02256d82ceda795dda14af2bcf6eb1ac8abab570c9c07b2afb9a4fb3ab95fd"
+    },
+    "word/_rels/document.xml.rels": {
+      "path": "test/layout-goldens/word/_rels/document.xml.rels",
+      "sha256": "d4fabe613e73e5bf0e4beb9ac1a9616d7305c79e8e706a669c4e235ca5f37293"
+    }
+  }
+}

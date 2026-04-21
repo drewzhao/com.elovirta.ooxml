@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="definition-lists">
+  <title>Definition Lists</title>
+  <body>
+    <p>Definition lists are represented with table-like Word structures.</p>
+    <dl id="definition-list">
+      <dlentry>
+        <dt>Ordered list</dt>
+        <dd>
+          <p>A list where item order is semantically meaningful.</p>
+          <p>Continuation paragraph for definition-list indentation.</p>
+        </dd>
+      </dlentry>
+      <dlentry>
+        <dt>Bullet list</dt>
+        <dd><p>A list where item order is not semantically meaningful.</p></dd>
+      </dlentry>
+    </dl>
+  </body>
+</topic>

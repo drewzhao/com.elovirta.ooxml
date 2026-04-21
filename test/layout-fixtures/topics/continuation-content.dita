@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="continuation-content">
+  <title>Continuation Content</title>
+  <body>
+    <p>Continuation blocks inside list items must align under list text.</p>
+    <ol id="continuation-ordered">
+      <li>
+        <p>This item contains a long paragraph that should wrap naturally in Word. The continuation line should align under the item text rather than under the ordered-list number.</p>
+        <p>This second paragraph is continuation content inside the same list item.</p>
+        <codeblock>curl -sS https://example.com/api \
+  -H "Accept: application/json"</codeblock>
+        <note type="tip">This note is continuation content inside the ordered list item.</note>
+      </li>
+      <li>
+        <p>This item contains a table as continuation content.</p>
+        <simpletable>
+          <sthead>
+            <stentry>Column</stentry>
+            <stentry>Purpose</stentry>
+          </sthead>
+          <strow>
+            <stentry>Alpha</stentry>
+            <stentry>First value in the table.</stentry>
+          </strow>
+          <strow>
+            <stentry>Beta</stentry>
+            <stentry>Second value in the table.</stentry>
+          </strow>
+        </simpletable>
+      </li>
+    </ol>
+    <ul id="continuation-bullet">
+      <li>
+        <p>This bullet item contains continuation text.</p>
+        <p>The second paragraph should align with the bullet item text.</p>
+      </li>
+    </ul>
+  </body>
+</topic>

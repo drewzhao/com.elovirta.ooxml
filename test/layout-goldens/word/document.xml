@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w:document xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing">
+  <w:body>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Title"/>
+        <w:spacing w:before="720"/>
+        <w:rPr>
+          <w:lang w:val=""/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:lang w:val=""/>
+        </w:rPr>
+        <w:instrText xml:space="preserve">TITLE \* MERGEFORMAT</w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:lang w:val=""/>
+        </w:rPr>
+        <w:t>DOCX Layout Baseline</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+    <!--TOC-->
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="TOCHeading"/>
+      </w:pPr>
+      <w:r>
+        <w:lastRenderedPageBreak/>
+        <w:t>Contents</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve">TOC \o "1-9" \w \* MERGEFORMAT</w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="TOC1"/>
+        <w:tabs>
+          <w:tab w:val="right" w:leader="dot" w:pos="9632"/>
+        </w:tabs>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Ordered Lists</w:t>
+      </w:r>
+      <w:r>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="begin" w:dirty="true"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> PAGEREF _Tocd21e56 \h </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>0</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="TOC1"/>
+        <w:tabs>
+          <w:tab w:val="right" w:leader="dot" w:pos="9632"/>
+        </w:tabs>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Bullet Lists</w:t>
+      </w:r>
+      <w:r>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="begin" w:dirty="true"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> PAGEREF _Tocd21e111 \h </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>0</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="TOC1"/>
+        <w:tabs>
+          <w:tab w:val="right" w:leader="dot" w:pos="9632"/>
+        </w:tabs>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Mixed Lists</w:t>
+      </w:r>
+      <w:r>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="begin" w:dirty="true"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> PAGEREF _Tocd21e154 \h </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>0</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="TOC1"/>
+        <w:tabs>
+          <w:tab w:val="right" w:leader="dot" w:pos="9632"/>
+        </w:tabs>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Continuation Content</w:t>
+      </w:r>
+      <w:r>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="begin" w:dirty="true"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> PAGEREF _Tocd21e203 \h </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>0</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="TOC1"/>
+        <w:tabs>
+          <w:tab w:val="right" w:leader="dot" w:pos="9632"/>
+        </w:tabs>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Definition Lists</w:t>
+      </w:r>
+      <w:r>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="begin" w:dirty="true"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> PAGEREF _Tocd21e272 \h </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>0</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="TOC1"/>
+        <w:tabs>
+          <w:tab w:val="right" w:leader="dot" w:pos="9632"/>
+        </w:tabs>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Deep Nesting</w:t>
+      </w:r>
+      <w:r>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="begin" w:dirty="true"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> PAGEREF _Tocd21e305 \h </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>0</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+    <!--Topic unique_1-->
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:bookmarkStart w:id="1" w:name="_Refd21e56"/>
+      <w:bookmarkStart w:id="2" w:name="_Tocd21e56"/>
+      <w:r>
+        <w:t>Ordered Lists</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="1"/>
+      <w:bookmarkEnd w:id="2"/>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Two separate ordered lists must each start at one.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="101"/>
+        </w:numPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="4" w:name="_Tocd21e64"/>
+      <w:bookmarkStart w:id="3" w:name="_Refd21e64"/>
+      <w:r>
+        <w:t>First ordered item in the first list.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="101"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Second ordered item in the first list.</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="3"/>
+      <w:bookmarkEnd w:id="4"/>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:t>A paragraph separates the lists.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="102"/>
+        </w:numPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="6" w:name="_Tocd21e76"/>
+      <w:bookmarkStart w:id="5" w:name="_Refd21e76"/>
+      <w:r>
+        <w:t>First ordered item in the second list.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="102"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Second ordered item in the second list.</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="5"/>
+      <w:bookmarkEnd w:id="6"/>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Nested ordered levels must use deterministic numbering and indentation.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="103"/>
+        </w:numPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="8" w:name="_Tocd21e88"/>
+      <w:bookmarkStart w:id="7" w:name="_Refd21e88"/>
+      <w:r>
+        <w:t>Level one item.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber2"/>
+        <!--depth 2-->
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="104"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level two item.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber3"/>
+        <!--depth 3-->
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="105"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level three item.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="103"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level one sibling item.</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="7"/>
+      <w:bookmarkEnd w:id="8"/>
+    </w:p>
+    <w:sectPr xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+      <w:headerReference w:type="default" r:id="rId8"/>
+      <w:footerReference w:type="even" r:id="rId9"/>
+      <w:footerReference w:type="default" r:id="rId10"/>
+      <w:pgSz w:w="11900" w:h="16840"/>
+      <w:pgMar w:top="1417" w:right="1134" w:bottom="1417" w:left="1134" w:header="708" w:footer="708" w:gutter="0"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+    <!--Topic unique_2-->
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:bookmarkStart w:id="9" w:name="_Refd21e111"/>
+      <w:bookmarkStart w:id="10" w:name="_Tocd21e111"/>
+      <w:r>
+        <w:t>Bullet Lists</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="9"/>
+      <w:bookmarkEnd w:id="10"/>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Bullet lists must keep marker and text alignment stable.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="106"/>
+        </w:numPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="12" w:name="_Tocd21e119"/>
+      <w:bookmarkStart w:id="11" w:name="_Refd21e119"/>
+      <w:r>
+        <w:t>First bullet item.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="106"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Second bullet item.</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="11"/>
+      <w:bookmarkEnd w:id="12"/>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Nested bullet levels must remain visually distinct.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="107"/>
+        </w:numPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="14" w:name="_Tocd21e131"/>
+      <w:bookmarkStart w:id="13" w:name="_Refd21e131"/>
+      <w:r>
+        <w:t>Level one bullet.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet2"/>
+        <!--depth 2-->
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="108"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level two bullet.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet3"/>
+        <!--depth 3-->
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="109"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level three bullet.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="107"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level one sibling bullet.</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="13"/>
+      <w:bookmarkEnd w:id="14"/>
+    </w:p>
+    <w:sectPr xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+      <w:headerReference w:type="default" r:id="rId8"/>
+      <w:footerReference w:type="even" r:id="rId9"/>
+      <w:footerReference w:type="default" r:id="rId10"/>
+      <w:pgSz w:w="11900" w:h="16840"/>
+      <w:pgMar w:top="1417" w:right="1134" w:bottom="1417" w:left="1134" w:header="708" w:footer="708" w:gutter="0"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+    <!--Topic unique_3-->
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:bookmarkStart w:id="15" w:name="_Refd21e154"/>
+      <w:bookmarkStart w:id="16" w:name="_Tocd21e154"/>
+      <w:r>
+        <w:t>Mixed Lists</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="15"/>
+      <w:bookmarkEnd w:id="16"/>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Mixed ordered and bullet lists must preserve list type at each level.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="110"/>
+        </w:numPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="18" w:name="_Tocd21e162"/>
+      <w:bookmarkStart w:id="17" w:name="_Refd21e162"/>
+      <w:r>
+        <w:t>Ordered parent with bullet children.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet2"/>
+        <!--depth 2-->
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="111"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Bullet child one.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet2"/>
+        <!--depth 2-->
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="111"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Bullet child two.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="110"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Ordered parent sibling.</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="17"/>
+      <w:bookmarkEnd w:id="18"/>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="112"/>
+        </w:numPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="20" w:name="_Tocd21e182"/>
+      <w:bookmarkStart w:id="19" w:name="_Refd21e182"/>
+      <w:r>
+        <w:t>Bullet parent with ordered children.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber2"/>
+        <!--depth 2-->
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="113"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Ordered child one.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber2"/>
+        <!--depth 2-->
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="113"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Ordered child two.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="112"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Bullet parent sibling.</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="19"/>
+      <w:bookmarkEnd w:id="20"/>
+    </w:p>
+    <w:sectPr xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+      <w:headerReference w:type="default" r:id="rId8"/>
+      <w:footerReference w:type="even" r:id="rId9"/>
+      <w:footerReference w:type="default" r:id="rId10"/>
+      <w:pgSz w:w="11900" w:h="16840"/>
+      <w:pgMar w:top="1417" w:right="1134" w:bottom="1417" w:left="1134" w:header="708" w:footer="708" w:gutter="0"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+    <!--Topic unique_4-->
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:bookmarkStart w:id="21" w:name="_Refd21e203"/>
+      <w:bookmarkStart w:id="22" w:name="_Tocd21e203"/>
+      <w:r>
+        <w:t>Continuation Content</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="21"/>
+      <w:bookmarkEnd w:id="22"/>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Continuation blocks inside list items must align under list text.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="114"/>
+        </w:numPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="24" w:name="_Tocd21e211"/>
+      <w:bookmarkStart w:id="23" w:name="_Refd21e211"/>
+      <w:r>
+        <w:t>This item contains a long paragraph that should wrap naturally in Word. The continuation line should align under the item text rather than under the ordered-list number.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <!--depth 1-->
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>This second paragraph is continuation content inside the same list item.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="HTMLPreformatted"/>
+        <!--depth 1-->
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rStyle w:val="HTMLCode"/>
+        </w:rPr>
+        <w:t>curl -sS https://example.com/api \</w:t>
+      </w:r>
+      <w:r>
+        <w:br/>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rStyle w:val="HTMLCode"/>
+        </w:rPr>
+        <w:t>  -H "Accept: application/json"</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+        <!--depth 1-->
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:caps/>
+          <w:b w:val="true"/>
+        </w:rPr>
+        <w:t>Tip:</w:t>
+        <w:t xml:space="preserve">
+        </w:t>
+      </w:r>
+      <w:r>
+        <w:t>This note is continuation content inside the ordered list item.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="114"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>This item contains a table as continuation content.</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblStyle w:val="TableGrid"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblInd w:w="720" w:type="dxa"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="1" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid/>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="BodyText"/>
+            </w:pPr>
+            <w:r>
+              <w:t>Alpha</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="BodyText"/>
+            </w:pPr>
+            <w:r>
+              <w:t>First value in the table.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="BodyText"/>
+            </w:pPr>
+            <w:r>
+              <w:t>Beta</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="BodyText"/>
+            </w:pPr>
+            <w:r>
+              <w:t>Second value in the table.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="115"/>
+        </w:numPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="26" w:name="_Tocd21e263"/>
+      <w:bookmarkStart w:id="25" w:name="_Refd21e263"/>
+      <w:r>
+        <w:t>This bullet item contains continuation text.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <!--depth 1-->
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>The second paragraph should align with the bullet item text.</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="25"/>
+      <w:bookmarkEnd w:id="26"/>
+    </w:p>
+    <w:sectPr xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+      <w:headerReference w:type="default" r:id="rId8"/>
+      <w:footerReference w:type="even" r:id="rId9"/>
+      <w:footerReference w:type="default" r:id="rId10"/>
+      <w:pgSz w:w="11900" w:h="16840"/>
+      <w:pgMar w:top="1417" w:right="1134" w:bottom="1417" w:left="1134" w:header="708" w:footer="708" w:gutter="0"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+    <!--Topic unique_5-->
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:bookmarkStart w:id="27" w:name="_Refd21e272"/>
+      <w:bookmarkStart w:id="28" w:name="_Tocd21e272"/>
+      <w:r>
+        <w:t>Definition Lists</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="27"/>
+      <w:bookmarkEnd w:id="28"/>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Definition lists are represented with table-like Word structures.</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblLayout w:type="autofit"/>
+        <w:tblStyle w:val="TableGrid"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblInd w:w="0" w:type="dxa"/>
+        <w:tblLook w:val="04A0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol/>
+        <w:gridCol/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>Ordered list</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="BodyText"/>
+            </w:pPr>
+            <w:r>
+              <w:t>A list where item order is semantically meaningful.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="BodyText"/>
+            </w:pPr>
+            <w:r>
+              <w:t>Continuation paragraph for definition-list indentation.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>Bullet list</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:pStyle w:val="BodyText"/>
+            </w:pPr>
+            <w:r>
+              <w:t>A list where item order is not semantically meaningful.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:sectPr xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+      <w:headerReference w:type="default" r:id="rId8"/>
+      <w:footerReference w:type="even" r:id="rId9"/>
+      <w:footerReference w:type="default" r:id="rId10"/>
+      <w:pgSz w:w="11900" w:h="16840"/>
+      <w:pgMar w:top="1417" w:right="1134" w:bottom="1417" w:left="1134" w:header="708" w:footer="708" w:gutter="0"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+    <!--Topic unique_6-->
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:bookmarkStart w:id="29" w:name="_Refd21e305"/>
+      <w:bookmarkStart w:id="30" w:name="_Tocd21e305"/>
+      <w:r>
+        <w:t>Deep Nesting</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="29"/>
+      <w:bookmarkEnd w:id="30"/>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Word numbering definitions provide nine levels. This fixture reaches level nine.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+        <!--depth 1-->
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="116"/>
+        </w:numPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="32" w:name="_Tocd21e313"/>
+      <w:bookmarkStart w:id="31" w:name="_Refd21e313"/>
+      <w:r>
+        <w:t>Level 1.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber2"/>
+        <!--depth 2-->
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="117"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level 2.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber3"/>
+        <!--depth 3-->
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="118"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level 3.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber4"/>
+        <!--depth 4-->
+        <w:numPr>
+          <w:ilvl w:val="3"/>
+          <w:numId w:val="119"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level 4.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber5"/>
+        <!--depth 5-->
+        <w:numPr>
+          <w:ilvl w:val="4"/>
+          <w:numId w:val="120"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level 5.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber6"/>
+        <!--depth 6-->
+        <w:numPr>
+          <w:ilvl w:val="5"/>
+          <w:numId w:val="121"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level 6.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber7"/>
+        <!--depth 7-->
+        <w:numPr>
+          <w:ilvl w:val="6"/>
+          <w:numId w:val="122"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level 7.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber8"/>
+        <!--depth 8-->
+        <w:numPr>
+          <w:ilvl w:val="7"/>
+          <w:numId w:val="123"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level 8.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber9"/>
+        <!--depth 9-->
+        <w:numPr>
+          <w:ilvl w:val="8"/>
+          <w:numId w:val="124"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Level 9.</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="31"/>
+      <w:bookmarkEnd w:id="32"/>
+    </w:p>
+    <w:sectPr xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+      <w:headerReference w:type="default" r:id="rId8"/>
+      <w:footerReference w:type="even" r:id="rId9"/>
+      <w:footerReference w:type="default" r:id="rId10"/>
+      <w:pgSz w:w="11900" w:h="16840"/>
+      <w:pgMar w:top="1417" w:right="1134" w:bottom="1417" w:left="1134" w:header="708" w:footer="708" w:gutter="0"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>

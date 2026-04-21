@@ -1,1 +1,10 @@
 build.xml
+.tools-cache/
+build/
+*.tmp
+.DS_Store
+
+# Local render/review artifacts. Baseline goldens under test/layout-goldens are committed intentionally.
+*.pdf
+*.png
+*.pages

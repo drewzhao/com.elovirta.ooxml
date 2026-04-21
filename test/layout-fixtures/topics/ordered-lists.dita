@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ordered-lists">
+  <title>Ordered Lists</title>
+  <body>
+    <p>Two separate ordered lists must each start at one.</p>
+    <ol id="ordered-restart-a">
+      <li><p>First ordered item in the first list.</p></li>
+      <li><p>Second ordered item in the first list.</p></li>
+    </ol>
+    <p>A paragraph separates the lists.</p>
+    <ol id="ordered-restart-b">
+      <li><p>First ordered item in the second list.</p></li>
+      <li><p>Second ordered item in the second list.</p></li>
+    </ol>
+    <p>Nested ordered levels must use deterministic numbering and indentation.</p>
+    <ol id="ordered-nested">
+      <li>
+        <p>Level one item.</p>
+        <ol>
+          <li>
+            <p>Level two item.</p>
+            <ol>
+              <li><p>Level three item.</p></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><p>Level one sibling item.</p></li>
+    </ol>
+  </body>
+</topic>

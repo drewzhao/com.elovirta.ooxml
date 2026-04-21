@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="mixed-lists">
+  <title>Mixed Lists</title>
+  <body>
+    <p>Mixed ordered and bullet lists must preserve list type at each level.</p>
+    <ol id="mixed-ordered-first">
+      <li>
+        <p>Ordered parent with bullet children.</p>
+        <ul>
+          <li><p>Bullet child one.</p></li>
+          <li><p>Bullet child two.</p></li>
+        </ul>
+      </li>
+      <li><p>Ordered parent sibling.</p></li>
+    </ol>
+    <ul id="mixed-bullet-first">
+      <li>
+        <p>Bullet parent with ordered children.</p>
+        <ol>
+          <li><p>Ordered child one.</p></li>
+          <li><p>Ordered child two.</p></li>
+        </ol>
+      </li>
+      <li><p>Bullet parent sibling.</p></li>
+    </ul>
+  </body>
+</topic>

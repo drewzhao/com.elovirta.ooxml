@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="bullet-lists">
+  <title>Bullet Lists</title>
+  <body>
+    <p>Bullet lists must keep marker and text alignment stable.</p>
+    <ul id="bullet-simple">
+      <li><p>First bullet item.</p></li>
+      <li><p>Second bullet item.</p></li>
+    </ul>
+    <p>Nested bullet levels must remain visually distinct.</p>
+    <ul id="bullet-nested">
+      <li>
+        <p>Level one bullet.</p>
+        <ul>
+          <li>
+            <p>Level two bullet.</p>
+            <ul>
+              <li><p>Level three bullet.</p></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><p>Level one sibling bullet.</p></li>
+    </ul>
+  </body>
+</topic>

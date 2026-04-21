@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="deep-nesting">
+  <title>Deep Nesting</title>
+  <body>
+    <p>Word numbering definitions provide nine levels. This fixture reaches level nine.</p>
+    <ol id="nine-level-ordered">
+      <li><p>Level 1.</p>
+        <ol><li><p>Level 2.</p>
+          <ol><li><p>Level 3.</p>
+            <ol><li><p>Level 4.</p>
+              <ol><li><p>Level 5.</p>
+                <ol><li><p>Level 6.</p>
+                  <ol><li><p>Level 7.</p>
+                    <ol><li><p>Level 8.</p>
+                      <ol><li><p>Level 9.</p></li></ol>
+                    </li></ol>
+                  </li></ol>
+                </li></ol>
+              </li></ol>
+            </li></ol>
+          </li></ol>
+        </li></ol>
+      </li>
+    </ol>
+  </body>
+</topic>
