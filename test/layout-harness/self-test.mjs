@@ -13,6 +13,8 @@ import {
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'ooxml-layout-self-test-'));
 const sample = path.join(tmp, 'sample.txt');
 fs.writeFileSync(sample, 'sample\n', 'utf8');
+const pluginRoot = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..', '..');
+const documentLinkXsl = fs.readFileSync(path.join(pluginRoot, 'docx', 'word', 'document.link.xsl'), 'utf8');
 
 assert.equal(
   normalizeXml('<?xml version="1.0"?><root><item b="2" a="1"> x </item></root>'),
@@ -42,6 +44,11 @@ assert.equal(
 assert.equal(
   sha256File(sample),
   'aaf9ff488e0767da5ea1d56118e6f65a16c5633b0cefc1fa089bd3ab1810613d'
+);
+
+assert.match(
+  documentLinkXsl,
+  /<w:hyperlink\s+w:anchor="\{x:bookmark-name\(\$bookmark-prefix\.ref,\s*\$target\)\}"/
 );
 
 console.log('layout harness self-test passed');

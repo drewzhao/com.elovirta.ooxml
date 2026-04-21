@@ -70,25 +70,9 @@
         <w:pPr>
           <xsl:apply-templates select="." mode="block-style"/>
         </w:pPr>
-        <w:r>
-          <w:fldChar w:fldCharType="begin"/>
-        </w:r>
-        <w:r>
-          <w:instrText>
-            <xsl:attribute name="xml:space">preserve</xsl:attribute>
-            <xsl:text> REF </xsl:text>
-            <xsl:value-of select="x:bookmark-name($bookmark-prefix.ref, $target)"/>
-            <xsl:text> </xsl:text>
-            <xsl:text>\h </xsl:text>
-          </w:instrText>
-        </w:r>
-        <w:r>
-          <w:fldChar w:fldCharType="separate"/>
-        </w:r>
-        <xsl:apply-templates select="*[contains(@class, ' topic/linktext ')]/node()"/>
-        <w:r>
-          <w:fldChar w:fldCharType="end"/>
-        </w:r>
+        <w:hyperlink w:anchor="{x:bookmark-name($bookmark-prefix.ref, $target)}" w:history="1">
+          <xsl:apply-templates select="*[contains(@class, ' topic/linktext ')]/node()"/>
+        </w:hyperlink>
       </w:p>
     </xsl:if>
   </xsl:template>
@@ -228,28 +212,9 @@
         <xsl:apply-templates select="$target" mode="xref-prefix">
           <xsl:with-param name="capitalize" select="$capitalize"/>
         </xsl:apply-templates>
-        <w:r>
-          <w:fldChar w:fldCharType="begin"/>
-        </w:r>
-        <w:r>
-          <w:instrText>
-            <xsl:attribute name="xml:space">preserve</xsl:attribute>
-            <xsl:text> </xsl:text>
-            <xsl:choose>
-              <xsl:when test="false()">PAGEREF </xsl:when>
-              <xsl:otherwise>REF </xsl:otherwise>
-            </xsl:choose>
-            <xsl:value-of select="x:bookmark-name($bookmark-prefix.num, $target)"/>
-            <xsl:text> \h </xsl:text>
-          </w:instrText>
-        </w:r>
-        <w:r>
-          <w:fldChar w:fldCharType="separate"/>
-        </w:r>
-        <xsl:copy-of select="$contents"/>
-        <w:r>
-          <w:fldChar w:fldCharType="end"/>
-        </w:r>
+        <w:hyperlink w:anchor="{x:bookmark-name($bookmark-prefix.ref, $target)}" w:history="1">
+          <xsl:copy-of select="$contents"/>
+        </w:hyperlink>
       </xsl:when>
       <xsl:when test="@type = 'fn'">
         <!--xsl:apply-templates select="$target"/-->
@@ -297,139 +262,75 @@
         <xsl:apply-templates select="$target" mode="xref-prefix">
           <xsl:with-param name="capitalize" select="$capitalize"/>
         </xsl:apply-templates>
-        <w:r>
-          <w:fldChar w:fldCharType="begin"/>
-        </w:r>
-        <w:r>
-          <w:instrText>
-            <xsl:attribute name="xml:space">preserve</xsl:attribute>
-            <xsl:text> REF </xsl:text>
-            <xsl:value-of select="x:bookmark-name($bookmark-prefix.num, $target)"/>
-            <xsl:text> \h </xsl:text>
-          </w:instrText>
-        </w:r>
-        <w:r>
-          <w:fldChar w:fldCharType="separate"/>
-        </w:r>
-        <xsl:choose>
-          <xsl:when test="$target/*[contains(@class, ' topic/title ')]">
-            <w:r>
-              <w:t>
-                <xsl:call-template name="getVariable">
-                  <xsl:with-param name="id" select="'Figure'"/>
-                </xsl:call-template>
-              </w:t>
-            </w:r>
-            <w:r>
-              <w:t>
-                <xsl:attribute name="xml:space">preserve</xsl:attribute>
-                <xsl:call-template name="getVariable">
-                  <xsl:with-param name="id" select="'figure-number-separator'"/>
-                </xsl:call-template>
-              </w:t>
-            </w:r>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:copy-of select="$contents"/>
-          </xsl:otherwise>
-        </xsl:choose>
-        <w:r>
-          <w:fldChar w:fldCharType="end"/>
-        </w:r>
+        <w:hyperlink w:anchor="{x:bookmark-name($bookmark-prefix.ref, $target)}" w:history="1">
+          <xsl:choose>
+            <xsl:when test="$target/*[contains(@class, ' topic/title ')]">
+              <w:r>
+                <w:t>
+                  <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'Figure'"/>
+                  </xsl:call-template>
+                </w:t>
+              </w:r>
+              <w:r>
+                <w:t>
+                  <xsl:attribute name="xml:space">preserve</xsl:attribute>
+                  <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'figure-number-separator'"/>
+                  </xsl:call-template>
+                </w:t>
+              </w:r>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:copy-of select="$contents"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </w:hyperlink>
       </xsl:when>
       <xsl:when test="@type = 'table'">
         <xsl:apply-templates select="$target" mode="xref-prefix">
           <xsl:with-param name="capitalize" select="$capitalize"/>
         </xsl:apply-templates>
-        <w:r>
-          <w:fldChar w:fldCharType="begin"/>
-        </w:r>
-        <w:r>
-          <w:instrText>
-            <xsl:attribute name="xml:space">preserve</xsl:attribute>
-            <xsl:text> REF </xsl:text>
-            <xsl:value-of select="x:bookmark-name($bookmark-prefix.num, $target)"/>
-            <xsl:text> \h </xsl:text>
-          </w:instrText>
-        </w:r>
-        <w:r>
-          <w:fldChar w:fldCharType="separate"/>
-        </w:r>
-        <xsl:choose>
-          <xsl:when test="$target/*[contains(@class, ' topic/title ')]">
-            <w:r>
-              <w:t>
-                <xsl:call-template name="getVariable">
-                  <xsl:with-param name="id" select="'Table'"/>
-                </xsl:call-template>
-              </w:t>
-            </w:r>
-            <w:r>
-              <w:t>
-                <xsl:attribute name="xml:space">preserve</xsl:attribute>
-                <xsl:call-template name="getVariable">
-                  <xsl:with-param name="id" select="'figure-number-separator'"/>
-                </xsl:call-template>
-              </w:t>
-            </w:r>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:copy-of select="$contents"/>
-          </xsl:otherwise>
-        </xsl:choose>
-        <w:r>
-          <w:fldChar w:fldCharType="end"/>
-        </w:r>
+        <w:hyperlink w:anchor="{x:bookmark-name($bookmark-prefix.ref, $target)}" w:history="1">
+          <xsl:choose>
+            <xsl:when test="$target/*[contains(@class, ' topic/title ')]">
+              <w:r>
+                <w:t>
+                  <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'Table'"/>
+                  </xsl:call-template>
+                </w:t>
+              </w:r>
+              <w:r>
+                <w:t>
+                  <xsl:attribute name="xml:space">preserve</xsl:attribute>
+                  <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'figure-number-separator'"/>
+                  </xsl:call-template>
+                </w:t>
+              </w:r>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:copy-of select="$contents"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </w:hyperlink>
       </xsl:when>
       <xsl:when test="@type = 'callout'">
         <w:r>
           <w:t>(</w:t>
         </w:r>
-        <w:r>
-          <w:fldChar w:fldCharType="begin"/>
-        </w:r>
-        <w:r>
-          <w:instrText>
-            <xsl:attribute name="xml:space">preserve</xsl:attribute>
-            <xsl:text> REF </xsl:text>
-            <xsl:value-of select="x:bookmark-name($bookmark-prefix.ref, $target)"/>
-            <xsl:text> \n \h </xsl:text>
-          </w:instrText>
-        </w:r>
-        <w:r>
-          <w:fldChar w:fldCharType="separate"/>
-        </w:r>
-        <xsl:copy-of select="$contents"/>
-        <w:r>
-          <w:fldChar w:fldCharType="end"/>
-        </w:r>
+        <w:hyperlink w:anchor="{x:bookmark-name($bookmark-prefix.ref, $target)}" w:history="1">
+          <xsl:copy-of select="$contents"/>
+        </w:hyperlink>
         <w:r>
           <w:t>)</w:t>
         </w:r>
       </xsl:when>
       <xsl:otherwise>
-        <w:r>
-          <w:fldChar w:fldCharType="begin"/>
-        </w:r>
-        <w:r>
-          <w:instrText>
-            <xsl:attribute name="xml:space">preserve</xsl:attribute>
-            <xsl:text> </xsl:text>
-            <xsl:choose>
-              <xsl:when test="false()">PAGEREF </xsl:when>
-              <xsl:otherwise>REF </xsl:otherwise>
-            </xsl:choose>
-            <xsl:value-of select="x:bookmark-name($bookmark-prefix.ref, $target)"/>
-            <xsl:text> \h </xsl:text>
-          </w:instrText>
-        </w:r>
-        <w:r>
-          <w:fldChar w:fldCharType="separate"/>
-        </w:r>
-        <xsl:copy-of select="$contents"/>
-        <w:r>
-          <w:fldChar w:fldCharType="end"/>
-        </w:r>
+        <w:hyperlink w:anchor="{x:bookmark-name($bookmark-prefix.ref, $target)}" w:history="1">
+          <xsl:copy-of select="$contents"/>
+        </w:hyperlink>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
