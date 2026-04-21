@@ -8,6 +8,9 @@
     <property name="docx.dir" location="${dita.plugin.com.elovirta.ooxml.dir}/docx"/>
     <property name="dotx.file" location="${dita.plugin.com.elovirta.ooxml.dir}/resources/Normal.docx"/>
     <property name="args.rellinks" value="nofamily"/>
+    <property name="args.image.output" value="yes"/>
+    <property name="args.image.role.group" value="image_role"/>
+    <property name="args.docx.mermaid.output" value="yes"/>
 
     <!-- Skip image and HTML copy in DITA-OT 3.x or older -->
     <condition property="preprocess.copy-image.skip" value="true">
@@ -108,6 +111,9 @@
     <property name="document.flat.xsl" location="${docx.dir}/word/document.flat.xsl"/>
     <xslt style="${document.flat.xsl}" in="${dita.temp.dir.fullpath}/${dita.map.filename.root}_MERGED.xml"
       out="${clean.input.file}" force="true">
+      <param name="args.image.output" expression="${args.image.output}"/>
+      <param name="args.image.role.group" expression="${args.image.role.group}"/>
+      <param name="args.docx.mermaid.output" expression="${args.docx.mermaid.output}"/>
       <dita:extension id="dita.conductor.docx.param" behavior="org.dita.dost.platform.InsertAction"/>
       <xmlcatalog refid="dita.catalog"/>
     </xslt>
@@ -131,6 +137,9 @@
       <param name="image.dir" expression="${image.dir}"/>
       <param name="template.dir" expression="${dotx.dir.uri}"/>
       <param name="input.dir.url" expression="${user.input.dir.url}"/>
+      <param name="args.image.output" expression="${args.image.output}"/>
+      <param name="args.image.role.group" expression="${args.image.role.group}"/>
+      <param name="args.docx.mermaid.output" expression="${args.docx.mermaid.output}"/>
       <dita:extension id="dita.conductor.docx.param" behavior="org.dita.dost.platform.InsertAction"/>
       <xmlcatalog refid="dita.catalog"/>
     </xslt>
@@ -193,6 +202,14 @@
       <fileset dir="${dita.temp.dir}/docx/word/media" erroronmissingdir="false">
         <include name="**/*.mml"/>
         <include name="**/*.svg"/>
+      </fileset>
+    </delete>
+    <xslt style="${docx.dir}/word/_rels/media-includes.xsl" in="${dita.temp.dir}/docx/word/_rels/document.xml.rels"
+      out="${dita.temp.dir}/docx-media-includes.txt" force="true"/>
+    <delete>
+      <fileset dir="${dita.temp.dir}/docx/word/media" erroronmissingdir="false">
+        <include name="**/*"/>
+        <excludesfile name="${dita.temp.dir}/docx-media-includes.txt"/>
       </fileset>
     </delete>
   </target>

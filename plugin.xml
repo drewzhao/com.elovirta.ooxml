@@ -13,6 +13,16 @@
     <param name="footnotes.xsl" desc="Footnote stylesheet" type="file"/>
     <param name="document.xml.xsl" desc="Document relations metadata stylesheet" type="file"/>
     <param name="inkscape.exec" desc="Inkscape executable" type="file"/>
+    <param name="args.image.output" type="enum" desc="Image output mode: yes (all), no (none), rescue (tagged only)">
+      <val default="true" desc="Include all authored images">yes</val>
+      <val desc="Suppress authored images">no</val>
+      <val desc="Keep only authored images tagged with image_role group">rescue</val>
+    </param>
+    <param name="args.image.role.group" type="string" desc="Grouped-value group name for rescue mode (default: image_role)"/>
+    <param name="args.docx.mermaid.output" type="enum" desc="DOCX Mermaid diagram image output mode">
+      <val default="true" desc="Include Mermaid diagram images">yes</val>
+      <val desc="Suppress Mermaid diagram images">no</val>
+    </param>
   </transtype>
   <extension-point id="dita.conductor.docx.param" name="DOCX XSLT parameters"/>
   <feature extension="dita.transtype.print" value="docx"/>

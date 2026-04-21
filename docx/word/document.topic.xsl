@@ -438,6 +438,8 @@
     </w:p>
   </xsl:template>
       
+  <xsl:template match="*[contains(@class, ' topic/image ')][not(x:image-included(.))]" priority="1000"/>
+
   <xsl:template match="*[contains(@class, ' topic/image ')][@placement = 'inline' or empty(@placement)]" name="image.inline">
     <xsl:param name="styles" as="element()*" tunnel="yes">
       <xsl:apply-templates select="." mode="inline-style"/>

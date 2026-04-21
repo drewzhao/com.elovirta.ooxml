@@ -20,8 +20,8 @@
         <xsl:value-of select="x:generate-id(.)"/>
       </xsl:for-each>
     </xsl:variable>
-    <xsl:variable name="image-lists" as="xs:string*">
-      <xsl:for-each select="$content//*[contains(@class, ' topic/image ')]">
+  <xsl:variable name="image-lists" as="xs:string*">
+      <xsl:for-each select="$content//*[contains(@class, ' topic/image ')][x:image-included(.)]">
         <xsl:value-of select="x:generate-id(.)"/>
       </xsl:for-each>
     </xsl:variable>
@@ -57,7 +57,9 @@
   <xsl:template match="*[contains(@class, ' topic/image ')]" mode="number">
     <xsl:param name="image-lists" as="xs:string*" tunnel="yes"/>
     <xsl:copy>
-      <xsl:attribute name="x:image-number" select="index-of($image-lists, x:generate-id(.)) + 100"/>
+      <xsl:if test="x:image-included(.)">
+        <xsl:attribute name="x:image-number" select="index-of($image-lists, x:generate-id(.)) + 100"/>
+      </xsl:if>
       <xsl:apply-templates select="@* | node()" mode="number"/>
     </xsl:copy>
   </xsl:template>

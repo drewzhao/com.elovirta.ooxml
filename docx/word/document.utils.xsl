@@ -23,6 +23,9 @@
 
   <xsl:param name="template.dir"/>
   <xsl:param name="generate-header-number" select="false()" as="xs:boolean"/>
+  <xsl:param name="args.image.output" as="xs:string" select="'yes'"/>
+  <xsl:param name="args.image.role.group" as="xs:string" select="'image_role'"/>
+  <xsl:param name="args.docx.mermaid.output" as="xs:string" select="'yes'"/>
 
   <xsl:variable name="map" select="/*[contains(@class, ' map/map ')]/opentopic:map" as="element()"/>
 
@@ -31,6 +34,36 @@
     use="@id"/>
 
   <!-- Utilities -->
+
+  <xsl:function name="x:is-mermaid-image" as="xs:boolean">
+    <xsl:param name="image" as="element()"/>
+    <xsl:sequence select="contains(replace(string($image/@href), '\\', '/'), '_docx-mermaid/')"/>
+  </xsl:function>
+
+  <xsl:function name="x:is-rescue-image" as="xs:boolean">
+    <xsl:param name="image" as="element()"/>
+    <xsl:sequence select="matches(string($image/@props), concat('(^|\s)', $args.image.role.group, '\('))"/>
+  </xsl:function>
+
+  <xsl:function name="x:image-included" as="xs:boolean">
+    <xsl:param name="image" as="element()"/>
+    <xsl:variable name="image-output" select="lower-case(normalize-space($args.image.output))" as="xs:string"/>
+    <xsl:variable name="mermaid-output" select="lower-case(normalize-space($args.docx.mermaid.output))" as="xs:string"/>
+    <xsl:choose>
+      <xsl:when test="x:is-mermaid-image($image)">
+        <xsl:sequence select="$mermaid-output != 'no'"/>
+      </xsl:when>
+      <xsl:when test="$image-output = 'no'">
+        <xsl:sequence select="false()"/>
+      </xsl:when>
+      <xsl:when test="$image-output = 'rescue'">
+        <xsl:sequence select="x:is-rescue-image($image)"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:sequence select="true()"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
   
   <xsl:function name="x:parse-dateTime" as="xs:dateTime">
     <xsl:param name="dateTime" as="xs:string"/>
