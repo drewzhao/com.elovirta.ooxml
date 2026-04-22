@@ -11,6 +11,7 @@
     <property name="args.image.output" value="yes"/>
     <property name="args.image.role.group" value="image_role"/>
     <property name="args.docx.mermaid.output" value="yes"/>
+    <property name="docx.inkscape.skip" value="true"/>
 
     <!-- Skip image and HTML copy in DITA-OT 3.x or older -->
     <condition property="preprocess.copy-image.skip" value="true">

@@ -15,6 +15,8 @@ const sample = path.join(tmp, 'sample.txt');
 fs.writeFileSync(sample, 'sample\n', 'utf8');
 const pluginRoot = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..', '..');
 const documentLinkXsl = fs.readFileSync(path.join(pluginRoot, 'docx', 'word', 'document.link.xsl'), 'utf8');
+const pluginXml = fs.readFileSync(path.join(pluginRoot, 'plugin.xml'), 'utf8');
+const buildTemplateXml = fs.readFileSync(path.join(pluginRoot, 'build_template.xml'), 'utf8');
 
 assert.equal(
   normalizeXml('<?xml version="1.0"?><root><item b="2" a="1"> x </item></root>'),
@@ -49,6 +51,16 @@ assert.equal(
 assert.match(
   documentLinkXsl,
   /<w:hyperlink\s+w:anchor="\{x:bookmark-name\(\$bookmark-prefix\.ref,\s*\$target\)\}"/
+);
+
+assert.match(
+  pluginXml,
+  /<param name="docx\.inkscape\.skip"[^>]*>[\s\S]*<val default="true"[^>]*>true<\/val>/
+);
+
+assert.match(
+  buildTemplateXml,
+  /<property name="docx\.inkscape\.skip" value="true"\/>/
 );
 
 console.log('layout harness self-test passed');

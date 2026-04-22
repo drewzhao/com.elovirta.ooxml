@@ -13,6 +13,10 @@
     <param name="footnotes.xsl" desc="Footnote stylesheet" type="file"/>
     <param name="document.xml.xsl" desc="Document relations metadata stylesheet" type="file"/>
     <param name="inkscape.exec" desc="Inkscape executable" type="file"/>
+    <param name="docx.inkscape.skip" type="enum" desc="Skip legacy SVG-to-EMF conversion through Inkscape">
+      <val default="true" desc="Do not run Inkscape automatically">true</val>
+      <val desc="Allow legacy Inkscape SVG-to-EMF conversion">false</val>
+    </param>
     <param name="args.image.output" type="enum" desc="Image output mode: yes (all), no (none), rescue (tagged only)">
       <val default="true" desc="Include all authored images">yes</val>
       <val desc="Suppress authored images">no</val>
