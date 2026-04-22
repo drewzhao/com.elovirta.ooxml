@@ -8,6 +8,7 @@
                 version="2.0">
 
   <xsl:param name="input.uri"/>
+  <xsl:param name="docx.svg.policy" as="xs:string" select="'legacy-emf'"/>
   <xsl:variable name="input" select="document($input.uri)" as="document-node()"/>
   
   <xsl:variable name="prefix" select="'application/vnd.openxmlformats-officedocument.wordprocessingml.'" as="xs:string"/>
@@ -42,6 +43,9 @@
           <xsl:copy-of select="."/>
         </xsl:if>
       </xsl:for-each>
+      <xsl:if test="lower-case(normalize-space($docx.svg.policy)) = 'native' and empty($current/c:Default[@Extension = 'svg'])">
+        <Default Extension="svg" ContentType="image/svg+xml"/>
+      </xsl:if>
       <xsl:if test="empty(c:Override[@ContentType = concat($prefix, 'comments', $suffix)])">
         <Override PartName="/word/comments.xml" ContentType="{$prefix}comments{$suffix}"/>
       </xsl:if>

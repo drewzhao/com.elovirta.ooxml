@@ -17,6 +17,10 @@
       <val default="true" desc="Do not run Inkscape automatically">true</val>
       <val desc="Allow legacy Inkscape SVG-to-EMF conversion">false</val>
     </param>
+    <param name="docx.svg.policy" type="enum" desc="SVG handling policy">
+      <val default="true" desc="Legacy SVG-to-EMF relationship mapping">legacy-emf</val>
+      <val desc="Native Office SVG with PNG fallback">native</val>
+    </param>
     <param name="args.image.output" type="enum" desc="Image output mode: yes (all), no (none), rescue (tagged only)">
       <val default="true" desc="Include all authored images">yes</val>
       <val desc="Suppress authored images">no</val>

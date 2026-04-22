@@ -22,6 +22,7 @@
                version="2.0">
 
   <xsl:param name="image.dir"/>
+  <xsl:param name="docx.svg.policy" as="xs:string" select="'legacy-emf'"/>
   <!-- FIXME this should be xs:integer -->
   <xsl:param name="indent-base" as="xs:string?" select="string((x:get-style-indent('BodyText'), 0)[1])"/>
   
@@ -447,6 +448,8 @@
     <xsl:variable name="image.url" select="concat($input.dir.url, @href)" as="xs:string"/>
     <xsl:choose>
       <xsl:when test="exists(@dita-ot:image-height) or unparsed-text-available($image.url)">    
+        <xsl:variable name="is-svg" select="matches(lower-case(string(@href)), '\.svg($|[?#])')" as="xs:boolean"/>
+        <xsl:variable name="native-svg" select="$is-svg and lower-case(normalize-space($docx.svg.policy)) = 'native'" as="xs:boolean"/>
         <!-- Units are English metric units: 1 EMU = 1 div 914400 in = 1 div 360000 cm -->
         <xsl:variable name="width" as="xs:integer?">
           <xsl:if test="@dita-ot:image-width">
@@ -486,8 +489,8 @@
                        <xsl:attribute name="name">
                          <xsl:text>media/</xsl:text>
                          <xsl:choose>
-                           <xsl:when test="ends-with(@href, '.svg')">
-                             <xsl:value-of select="replace(@href, '\.svg$', '.emf')"/>
+                           <xsl:when test="$is-svg and not($native-svg)">
+                             <xsl:value-of select="replace(@href, '\.svg([?#].*)?$', '.emf')"/>
                            </xsl:when>
                            <xsl:otherwise>
                              <xsl:value-of select="@href"/>
@@ -503,6 +506,11 @@
                          <a:ext uri="{{28A0092B-C50C-407E-A947-70E740481C1C}}">
                            <a14:useLocalDpi val="0"/>
                          </a:ext>
+                         <xsl:if test="$native-svg">
+                           <a:ext uri="{{96DAC541-7B7A-43D3-8B79-37D633B846F1}}" xmlns:asvg="http://schemas.microsoft.com/office/drawing/2016/SVG/main">
+                             <asvg:svgBlip r:embed="rIdSvg{@x:image-number}"/>
+                           </a:ext>
+                         </xsl:if>
                        </a:extLst>
                      </a:blip>
                      <a:stretch>

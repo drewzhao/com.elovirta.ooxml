@@ -8,6 +8,7 @@
                 exclude-result-prefixes="xs x">
   
   <xsl:param name="template.dir" as="xs:string"/>
+  <xsl:param name="docx.svg.policy" as="xs:string" select="'legacy-emf'"/>
   <xsl:variable name="doc" select="document(concat($template.dir, 'word/_rels/document.xml.rels'))" as="document-node()?"/>
    
   <xsl:template match="/">
@@ -39,20 +40,31 @@
       
       <xsl:comment>images and links</xsl:comment>
       <xsl:for-each select="//@x:image-number">
+        <xsl:variable name="href" select="string(../@href)" as="xs:string"/>
+        <xsl:variable name="is-svg" select="matches(lower-case($href), '\.svg($|[?#])')" as="xs:boolean"/>
+        <xsl:variable name="native-svg" select="$is-svg and lower-case(normalize-space($docx.svg.policy)) = 'native'" as="xs:boolean"/>
         <Relationship Id="rId{.}"
           Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image">
           <xsl:attribute name="Target">
             <xsl:text>media/</xsl:text>
             <xsl:choose>
-              <xsl:when test="ends-with(../@href, '.svg')">
-                <xsl:value-of select="replace(../@href, '\.svg$', '.emf')"/>
+              <xsl:when test="$native-svg">
+                <xsl:value-of select="replace($href, '\.svg([?#].*)?$', '.png')"/>
+              </xsl:when>
+              <xsl:when test="$is-svg">
+                <xsl:value-of select="replace($href, '\.svg([?#].*)?$', '.emf')"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of select="../@href"/>
+                <xsl:value-of select="$href"/>
               </xsl:otherwise>
             </xsl:choose>
           </xsl:attribute>
         </Relationship>
+        <xsl:if test="$native-svg">
+          <Relationship Id="rIdSvg{.}"
+            Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+            Target="media/{$href}"/>
+        </xsl:if>
       </xsl:for-each>
       
       <xsl:for-each select="//*[@x:external-link-number]">

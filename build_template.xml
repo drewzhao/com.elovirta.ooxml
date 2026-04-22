@@ -12,6 +12,10 @@
     <property name="args.image.role.group" value="image_role"/>
     <property name="args.docx.mermaid.output" value="yes"/>
     <property name="docx.inkscape.skip" value="true"/>
+    <property name="docx.svg.policy" value="legacy-emf"/>
+    <condition property="docx.svg.native">
+      <equals arg1="${docx.svg.policy}" arg2="native"/>
+    </condition>
 
     <!-- Skip image and HTML copy in DITA-OT 3.x or older -->
     <condition property="preprocess.copy-image.skip" value="true">
@@ -115,6 +119,7 @@
       <param name="args.image.output" expression="${args.image.output}"/>
       <param name="args.image.role.group" expression="${args.image.role.group}"/>
       <param name="args.docx.mermaid.output" expression="${args.docx.mermaid.output}"/>
+      <param name="docx.svg.policy" expression="${docx.svg.policy}"/>
       <dita:extension id="dita.conductor.docx.param" behavior="org.dita.dost.platform.InsertAction"/>
       <xmlcatalog refid="dita.catalog"/>
     </xslt>
@@ -141,6 +146,7 @@
       <param name="args.image.output" expression="${args.image.output}"/>
       <param name="args.image.role.group" expression="${args.image.role.group}"/>
       <param name="args.docx.mermaid.output" expression="${args.docx.mermaid.output}"/>
+      <param name="docx.svg.policy" expression="${docx.svg.policy}"/>
       <dita:extension id="dita.conductor.docx.param" behavior="org.dita.dost.platform.InsertAction"/>
       <xmlcatalog refid="dita.catalog"/>
     </xslt>
@@ -166,6 +172,7 @@
     <xslt style="${document.xml.xsl}" in="${clean.input.file}" out="${dita.temp.dir}/docx/word/_rels/document.xml.rels"
       force="true">
       <param name="template.dir" expression="${dotx.dir.uri}"/>
+      <param name="docx.svg.policy" expression="${docx.svg.policy}"/>
       <dita:extension id="dita.conductor.docx.param" behavior="org.dita.dost.platform.InsertAction"/>
       <xmlcatalog refid="dita.catalog"/>
     </xslt>
@@ -173,6 +180,7 @@
     <xslt style="${docx.dir}/[Content_Types].xsl" in="${dita.temp.dir}/dotx/[Content_Types].xml"
       out="${dita.temp.dir}/docx/[Content_Types].xml" force="true">
       <param name="input.uri" expression="${clean.input.file.uri}"/>
+      <param name="docx.svg.policy" expression="${docx.svg.policy}"/>
       <dita:extension id="dita.conductor.docx.param" behavior="org.dita.dost.platform.InsertAction"/>
       <xmlcatalog refid="dita.catalog"/>
     </xslt>
@@ -199,12 +207,33 @@
     <copy todir="${dita.temp.dir}/docx/word/media">
       <dita-fileset format="image"/>
     </copy>
+    <if>
+      <isset property="docx.svg.native"/>
+      <then>
+        <copy todir="${dita.temp.dir}/docx/word/media">
+          <fileset dir="${user.input.dir}" erroronmissingdir="false">
+            <include name="**/_docx-svg/*.png"/>
+          </fileset>
+        </copy>
+      </then>
+    </if>
     <delete>
       <fileset dir="${dita.temp.dir}/docx/word/media" erroronmissingdir="false">
         <include name="**/*.mml"/>
-        <include name="**/*.svg"/>
       </fileset>
     </delete>
+    <if>
+      <not>
+        <isset property="docx.svg.native"/>
+      </not>
+      <then>
+        <delete>
+          <fileset dir="${dita.temp.dir}/docx/word/media" erroronmissingdir="false">
+            <include name="**/*.svg"/>
+          </fileset>
+        </delete>
+      </then>
+    </if>
     <xslt style="${docx.dir}/word/_rels/media-includes.xsl" in="${dita.temp.dir}/docx/word/_rels/document.xml.rels"
       out="${dita.temp.dir}/docx-media-includes.txt" force="true"/>
     <delete>

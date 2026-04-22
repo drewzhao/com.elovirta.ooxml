@@ -63,4 +63,14 @@ assert.match(
   /<property name="docx\.inkscape\.skip" value="true"\/>/
 );
 
+assert.match(
+  pluginXml,
+  /<param name="docx\.svg\.policy"[^>]*>[\s\S]*<val default="true"[^>]*>legacy-emf<\/val>/
+);
+
+assert.match(
+  buildTemplateXml,
+  /<property name="docx\.svg\.policy" value="legacy-emf"\/>/
+);
+
 console.log('layout harness self-test passed');
